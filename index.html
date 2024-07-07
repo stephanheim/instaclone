@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instaclone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/kamera.png" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="render();loadItems()">
+    <div class="main">
+      <div class="menu">
+        <div>
+          <h2 class="title">instaclone</h2>
+          <div class="ico-div">
+            <a href="#" class="menudiv">
+              <img class="icon resp-icon" src="img/kamera.png" />
+            </a>
+          </div>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/start.png" />
+            <p class="resp-menu">Startseite</p>
+          </a>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/search.png" />
+            <p class="resp-menu">Suche</p>
+          </a>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/explore.png" />
+            <p class="resp-menu">Entdecken</p>
+          </a>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/reels.png" />
+            <p class="resp-menu">Reels</p>
+          </a>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/news.png" />
+            <p class="resp-menu">Nachrichten</p>
+          </a>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/like-black.png" />
+            <p class="resp-menu">Benachrichtigungen</p>
+          </a>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/create.png" />
+            <p class="resp-menu">Erstellen</p>
+          </a>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/profil.png" />
+            <p class="resp-menu">Profil</p>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/threads.png" />
+            <p class="resp-menu">Threads</p>
+          </a>
+          <a href="#" class="menudiv">
+            <img class="icon" src="img/menu.png" />
+            <p class="resp-menu">Mehr</p>
+          </a>
+        </div>
+      </div>
+      <div class="scrollable">
+        <div class="insta">
+          <div class="stories">
+            <div class="story-item">
+              <img class="stories-img" src="img/stories/fcsg.svg" />
+              <p class="story-sub">FCSG</p>
+            </div>
+            <div class="story-item">
+              <img class="stories-img" src="img/stories/killbill.jpg" />
+              <p class="story-sub">kill_bill</p>
+            </div>
+            <div class="story-item">
+              <img class="stories-img" src="img/stories/mustang.jpg" />
+              <p class="story-sub">Muscle Cars</p>
+            </div>
+            <div class="story-item">
+              <img class="stories-img" src="img/stories/spiderman.jpg" />
+              <p class="story-sub">spiderman</p>
+            </div>
+            <div class="story-item">
+              <img class="stories-img" src="img/stories/nemo.jpg" />
+              <p class="story-sub">nemo</p>
+            </div>
+            <div class="story-item">
+              <img class="stories-img" src="img/stories/swiss.jpg" />
+              <p class="story-sub">Switzerland</p>
+            </div>
+            <div class="story-item">
+              <img class="stories-img" src="img/stories/vinyl.jpg" />
+              <p class="story-sub">Vinyl-Lovers</p>
+            </div>
+          </div>
+          <div class="posts" id="content">
+            <!-- ab hier wird in JS gerendert -->
+          </div>
+        </div>
+        <div class="profile">
+          <div>
+            <div class="proposal">
+              <img class="proposal-img" src="img/profiles/bild-sh.jpg" />
+              <p class="name">
+                stephan-h_70<br /><span class="subname">Stephan Heim</span>
+              </p>
+              <p class="follow">Wechseln</p>
+            </div>
+            <div class="proposal">
+              <p class="props4you">Vorschläge für dich</p>
+              <p></p>
+              <p class="seeall">Alle ansehen</p>
+            </div>
+
+            <div class="proposal">
+              <img class="proposal-img" src="img/profiles/beachgirl.jpg" />
+              <p class="name">
+                beachgirl<br /><span class="subname">Vorschläge für dich</span>
+              </p>
+              <p class="follow">Folgen</p>
+            </div>
+            <div class="proposal">
+              <img class="proposal-img" src="img/profiles/biker-367.jpg" />
+              <p class="name">
+                biker-367<br /><span class="subname">Vorschläge für dich</span>
+              </p>
+              <p class="follow">Folgen</p>
+            </div>
+            <div class="proposal">
+              <img class="proposal-img" src="img/profiles/darryl_ny.jpg" />
+              <p class="name">
+                darryl_ny<br /><span class="subname">Vorschläge für dich</span>
+              </p>
+              <p class="follow">Folgen</p>
+            </div>
+            <div class="proposal">
+              <img class="proposal-img" src="img/profiles/karen_lax.jpg" />
+              <p class="name">
+                karen_lax<br /><span class="subname">Vorschläge für dich</span>
+              </p>
+              <p class="follow">Folgen</p>
+            </div>
+            <div class="proposal">
+              <img class="proposal-img" src="img/profiles/flowerjane.jpg" />
+              <p class="name">
+                flowerjane<br /><span class="subname">Vorschläge für dich</span>
+              </p>
+              <p class="follow">Folgen</p>
+            </div>
+            <div class="proposal">
+              <img class="proposal-img" src="img/profiles/red_elf-21.jpg" />
+              <p class="name">
+                red_elf-21<br /><span class="subname">Vorschläge für dich</span>
+              </p>
+              <p class="follow">Folgen</p>
+            </div>
+            <ul class="impressum">
+              <li><a href="#">Info</a></li>
+              <li><a href="#">Hilfe</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Datenrichtlinie</a></li>
+              <li><a href="#">Nutzungsbedingungen</a></li>
+              <li><a href="#">Standorte</a></li>
+              <li><a href="#">Sprache</a></li>
+              <span>Beta Verified</span>
+              <br />
+              <p>© 2024 INSTACLONE BY SH</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
